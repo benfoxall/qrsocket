@@ -3,11 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>test</title>
+    <style media="screen">
+      video {
+        width: 20vw;
+        position: fixed;
+        right: 0;
+        bottom:0
+      }
+      img {
+        width: 50vw;
+        max-width: 50vmin;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
   <body>
     <script src="lib/modules/qrcode.js"></script>
     <script src="lib/qrsocket.js"></script>
-
     <script>
 
     const socket = new QRSocket()
